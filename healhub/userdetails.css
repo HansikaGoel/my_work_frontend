@@ -1,0 +1,22 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  background-color: beige;
+}
+.detail{
+  background-color: rgb(47, 14, 129);
+}
+h1{
+  text-align: center;
+  text-transform: capitalize;
+}
+form{
+  text-transform: capitalize;
+  font-size: large;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.submit{
+  background-color: cadetblue;
+  margin: 10px;
+}
+
