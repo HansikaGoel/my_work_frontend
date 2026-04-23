@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Buttons</title>
+    <link rel="stylesheet" href="text-click.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=favorite"
+    />
+  </head>
+  <!-- <script src="text-click.js"></script> -->
+  <body>
+    <button id="text-click">Text</button>
+
+    <button class="button1" id="button1">Button-1</button>
+
+    <button class="button1" id="button2">Button-2</button>
+
+    <p>Hello, Guys!!</p>
+
+    <button
+      class="button2"
+      onclick="
+        total = total + 1;
+        document.querySelector('#total').innerText = `total is ${total}`;
+      "
+    >
+      Add to Bag
+    </button>
+
+    <button class="button3" onclick="alert('My Favourite!!')">
+      <span class="material-symbols-outlined"> ❤️WISHLIST</span>
+    </button>
+
+    <div id="total"></div>
+
+    <script>
+      let total = 0;
+      document.querySelector("#total").innerText = `total is ${total}`;
+    </script>
+  </body>
+</html>

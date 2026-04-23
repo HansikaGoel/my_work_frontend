@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sim = {
+        company: `Indo`,
+        dataSpeed: `5G/6G`,
+        plan: {
+          call: `unlimited`,
+          sms: `unlimited`,
+          data: `50GB per month`,
+          validity: `30 days`,
+          roaming: `national roaming`,
+        },
+        customer: {
+          name: `John Doe`,
+          id: `CUST123`,
+        },
+        display: function () {
+          return sim;
+        },
+      };
+      console.log(sim.display());
+      //output required
+      console.log(typeof sim);
+      let simString = JSON.stringify(sim);
+      console.log(typeof simString);
+      console.log(`sim: ${simString}`);
+      // console.log(localstorage.getItem(`sim.company`));
+      // console.log(localstorage.getItem(`sim.plan`));
+      // console.log(localstorage.setItem((`price`, `100`)));
+      // console.log(localstorage.)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEX-MODELING</title>
+  <style>
+   *{
+      margin:0px;
+      padding:10px;
+    }
+    .bigcountainer{
+      background-color:black;
+       display:block;
+    }
+    #container1{
+      background-color:deeppink;
+      margin:20px;
+       display:flex;
+       flex-direction: row-reverse;
+       justify-content:flex-start;
+    }
+    #container2{
+      background-color:gold;
+      margin:20px;
+       display:flex;
+       flex-direction: row-reverse;
+       justify-content:flex-end;
+    }
+    #container3{
+      background-color:greenyellow;
+      margin:20px;
+       display:flex;
+       flex-direction: row-reverse;
+       justify-content:center;
+    }
+    #container4{
+      background-color:blue;
+      margin:20px;
+       display:flex;
+       flex-direction: row-reverse;
+       justify-content:space-around;
+    }
+    #container5{
+      background-color: brown;
+      margin:20px;
+       display:flex;
+       flex-direction: row-reverse;
+       justify-content:space-between;
+    }
+    #container6{
+      background-color:red;
+      margin:20px;
+       display:flex;
+       flex-direction: row-reverse;
+       justify-content:space-evenly;
+    }
+    .box{
+      color:crimson;
+      background-color:floralwhite;
+      height:100px;
+      width:100px;
+      text-align: center;
+      text-decoration: underline;
+      text-decoration-style: double;
+      text-decoration-color: black;
+      text-transform: lowercase;
+      text-shadow: lightsalmon;
+      font-size:20px;
+      font-style:italic;
+      font-weight: bold;
+      margin:10px;
+      border:3px solid black;
+      border-radius: 10px;
+      box-sizing: content-box;
+    }
+  </style>
+</head>
+<body>
+ <div class="bigcountainer">
+  <div id="container1" class="container">
+   <div id="box1" class="box">BOX1</div>
+   <div id="box2" class="box">BOX2</div>
+   <div id="box3" class="box">BOX3</div>
+   <div id="box4" class="box">BOX4</div>
+  </div>
+  <div id="container2" class="container">
+   <div id="box1" class="box">BOX1</div>
+   <div id="box2" class="box">BOX2</div>
+   <div id="box3" class="box">BOX3</div>
+   <div id="box4" class="box">BOX4</div>
+  </div>
+  <div id="container3" class="container">
+   <div id="box1" class="box">BOX1</div>
+   <div id="box2" class="box">BOX2</div>
+   <div id="box3" class="box">BOX3</div>
+   <div id="box4" class="box">BOX4</div>
+  </div>
+  <div id="container4" class="container">
+   <div id="box1" class="box">BOX1</div>
+   <div id="box2" class="box">BOX2</div>
+   <div id="box3" class="box">BOX3</div>
+   <div id="box4" class="box">BOX4</div>
+  </div>
+  <div id="container5" class="container">
+   <div id="box1" class="box">BOX1</div>
+   <div id="box2" class="box">BOX2</div>
+   <div id="box3" class="box">BOX3</div>
+   <div id="box4" class="box">BOX4</div>
+  </div>
+  <div id="container6" class="container">
+   <div id="box1" class="box">BOX1</div>
+   <div id="box2" class="box">BOX2</div>
+   <div id="box3" class="box">BOX3</div>
+   <div id="box4" class="box">BOX4</div>
+  </div>
+ </div>
+</body>
+</html>

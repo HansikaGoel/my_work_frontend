@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>object</title>
+  </head>
+  <body>
+    <script>
+      let product = {
+        company: `mobi`,
+        price: 500,
+        star: {
+          stars: 4.8,
+          reviews: 1000,
+        },
+        display: function () {
+          console.log(`company: ${this.company}`);
+          console.log(`price: ${product.price}`);
+          console.log(`Company: ${product.company.toUpperCase()}`);
+        },
+      };
+      product.display();
+    </script>
+  </body>
+</html>

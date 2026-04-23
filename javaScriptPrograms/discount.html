@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Metro Price</title>
+  </head>
+  <body>
+    <script>
+      let discount;
+      let price = 500;
+      console.log(`Price is ${price}`);
+      let gender = "male";
+      console.log("gender is =" + gender);
+      let age = 3;
+      console.log(`age is ${age}`);
+      let female_price;
+      let male_price;
+      if (age < 5) {
+        price = 0;
+      }
+      if (gender == "female") {
+        discount = 50;
+        if (age >= 5 && age <= 8) {
+          discount = 50;
+        } else if (age > 65) {
+          discount = 30;
+        } else {
+          discount = 0;
+        }
+        female_price = price - (discount * price) / 100;
+        console.log(`Price is ${female_price}`);
+      } else {
+        male_price = price;
+        {
+          if (age >= 5 && age <= 8) {
+            discount = 50;
+          } else if (age > 65) {
+            discount = 30;
+          } else {
+            discount = 0;
+          }
+        }
+        male_price = price - (discount * price) / 100;
+        console.log(`Price is ${male_price}`);
+      }
+    </script>
+  </body>
+</html>

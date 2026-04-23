@@ -1,0 +1,12 @@
+.help {
+  background-color: blue;
+  font-size: 40px;
+}
+#click-me {
+  background-color: green;
+  font-size: 40px;
+}
+p {
+  color: orange;
+  font-size: 40px;
+}

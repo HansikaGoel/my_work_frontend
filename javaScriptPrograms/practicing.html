@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let factory = {
+        name: `golden`,
+        yearEstablished: `2026`,
+        product: `organic farming grains`,
+        reviews: {
+          stars: `4.8`,
+          noOfReviews: `1 lakh +`,
+        },
+        quality: {
+          FASSI: `tuested and nutricious`,
+          peopleReview: `healthy and delicious`,
+        },
+        display: function () {
+          return factory;
+        },
+
+        itemsdisplay: function () {
+          console.log(`wheat, bajra, oats, dal, chana, rice, oil seeds`);
+        },
+      };
+
+      console.log(factory.display());
+      console.log();
+    </script>
+  </body>
+</html>

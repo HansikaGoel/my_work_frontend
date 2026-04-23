@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let app = {
+        company: `grapes`,
+        colors: `black, silver, gold`,
+        price: 200000 + ` rs`,
+        rating: {
+          stars: 4.9,
+          reviews: 20000000,
+        },
+        export: `USA, Canada, China, Dubai, Germany`,
+      };
+      console.log(app);
+      console.log(app.company);
+      console.log(this.price);
+      let car = app;
+      car.company = `zebra`;
+      car.price = 2000000 + ` rs`;
+      console.log(car);
+      console.log(car.company);
+      let deliveryTime = 2 + ` hr` + 25 + ` min`;
+      app["delivery-time"] = deliveryTime;
+      console.log(app[`delivery-time`]);
+
+      let object = {
+        message: `good job`,
+        status: `complete`,
+      };
+      let { message, status } = object;
+      console.log(object.message);
+      console.log(object[`status`]);
+    </script>
+  </body>
+</html>

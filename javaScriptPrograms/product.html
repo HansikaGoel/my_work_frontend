@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let product = {
+        name: "ABC",
+        price: "100 rs per share",
+        stars: "4.5",
+        rating: {
+          app_rating: "4.5",
+          website_rating: "4.2",
+          YT_rating: "4.8",
+        },
+        advertise: function () {
+          return "amazon, flipkart, snapdeal, myntra, ajio";
+        },
+      };
+      console.log(product.advertise());
+      console.log(product);
+      console.log(product.name);
+      console.log(typeof product);
+      let str = JSON.stringify(product);
+      console.log(str);
+      console.log(typeof str);
+
+      localStorage.setItem("moto", "advance India");
+      localStorage.setItem("year", "2074");
+      console.log(localStorage.getItem("moto"));
+      console.log(localStorage.getItem("year"));
+      console.log(localStorage);
+      localStorage.setItem("product", product);
+      // covert object to string and store in local storage
+      localStorage.setItem("product", JSON.stringify(product));
+      console.log(localStorage.getItem("product"));
+    </script>
+  </body>
+</html>

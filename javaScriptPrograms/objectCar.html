@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let Car = {
+        company: `Royal`,
+        price: 100000,
+        quality: `premium`,
+        reviews: {
+          stars: 4.5,
+          noOfReviews: 10000,
+        },
+        display: function () {
+          console.log(`Best Car: ${Car.company}`);
+          console.log(`noOfReviews: ${Car.company.reviews.noOfReviews}`);
+        },
+      };
+      Car.display();
+    </script>
+  </body>
+</html>
